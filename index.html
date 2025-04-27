@@ -22,14 +22,18 @@
         const Banner = () => {
             const title = "Welcome to my website"
             const subtitle = "this is a website for learning react"
-            const address = "https:www.netninja.dev"
+
+            // const handleClick = (e) => {
+            //     console.log('You Clicked me')
+            //     console.log('the site title is:', title)
+            //     console.log(e)
+            // }
+            
             return (
                 <div className="banner">
-                    <h2>{title}</h2>
+                    <h2>{title.toUpperCase}</h2>
                     <p>{subtitle}</p>
-                    <p>Today's date is: {new Date().toLocaleDateString()}</p>
-                    <p>Random number: {Math.random() * 100 }</p>
-                    <a href={address}>Visit the Net Ninja Site.</a>
+                    <button onClick={(e) => console.log(e) }>Click me</button>
                 </div>
             )
         }
