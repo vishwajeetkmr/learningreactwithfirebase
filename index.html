@@ -20,10 +20,16 @@
 
     <script type="text/babel">
         const Banner = () => {
+            const title = "Welcome to my website"
+            const subtitle = "this is a website for learning react"
+            const address = "https:www.netninja.dev"
             return (
                 <div className="banner">
-                    <p>banner</p>
-                    <div></div>
+                    <h2>{title}</h2>
+                    <p>{subtitle}</p>
+                    <p>Today's date is: {new Date().toLocaleDateString()}</p>
+                    <p>Random number: {Math.random() * 100 }</p>
+                    <a href={address}>Visit the Net Ninja Site.</a>
                 </div>
             )
         }
